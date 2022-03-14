@@ -1,0 +1,29 @@
+LEARNING GIT
+
+git operations to commit to the main branch in github. 
+
+git clone 
+	#clones the repo from the htmls link and creates as a local copy. 
+
+git add . 
+	#staging the changes in the all the files in the folder
+	#you could pass in the name of the file in after add .[name_of_file_here]
+
+git status
+	#make sure it shows as green
+
+git commmit -m "ass checkup"
+	#commits the local file changes in your local repo
+
+git push -u origin main
+	#takes all local changes and syncs with the remote repo
+
+git log
+	#to verify that the commit actually worked. 
+
+
+git branch [name of new branch]
+	#create a new sub branch
+
+git checkout [branchname]
+	#switches between different branch in the remote repo
