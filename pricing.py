@@ -55,15 +55,16 @@ def calculate_average_price_per_group():
         result[group] /= group_counts[group]
 
     return result
+    
+def main():
+    result = calculate_average_price_per_group()
+    expected_result = {
+        "G1": 32.68,
+        "G2": 85.4,
+        "G3": 76.3
+    }
 
-result = calculate_average_price_per_group()
+    assert result == expected_result
 
-assert result == {
-    "G1": 32.68,
-    "G2": 85.4,
-    "G3": 76.3
-}
-
-print("It works!")
-
-s
+if __name__ == "__main__":
+    main()
